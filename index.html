@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MadeinItaly Outlet | Alfaiataria Masculina Italiana de Alto Padrão</title>
+  <meta name="description" content="Outlet de alfaiataria masculina italiana premium. Curadoria exclusiva de blazers em pura lã, linho e tecelagens nobres como Vitale Barberis Canonico. Compre online ou agende atendimento VIP.">
+  
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:title" content="MadeinItaly Outlet | Alfaiataria Masculina Italiana">
+  <meta property="og:description" content="Alfaiataria italiana, presença inconfundível. Curadoria exclusiva de blazers importados da Itália.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero_editorial_model_1788187467145.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond & Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 00. Top Announcement Bar -->
+  <aside class="top-bar">
+    <span>Boutique Online Exclusiva · <strong>Curadoria Direta da Itália</strong> com Entrega para todo o Brasil.</span>
+    <a href="#ecommerce-spotlight" id="topbar-ecom-link">Visitar E-commerce &rarr;</a>
+  </aside>
+
+  <!-- 01. Navbar Flutuante -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="MadeinItaly Outlet Home">
+        <span class="logo-main">MadeinItaly<span>.com</span></span>
+        <span class="logo-sub">Alfaiataria Masculina</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#manifesto" class="nav-link">Manifesto</a></li>
+          <li><a href="#selezione" class="nav-link">La Selezione</a></li>
+          <li><a href="#tessuti" class="nav-link">I Tessuti</a></li>
+          <li><a href="#ecommerce-spotlight" class="nav-link">E-commerce</a></li>
+          <li><a href="#guida-stile" class="nav-link">Guia de Estilo</a></li>
+          <li><a href="#concierge" class="nav-link">Concierge</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Dual CTAs -->
+        <a href="#ecommerce-spotlight" class="btn btn-ecommerce btn-sm" id="nav-btn-ecom">
+          <svg class="btn-icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span>Loja Online</span>
+        </a>
+        <a href="https://wa.me/5511978365191?text=Olá!%20Gostaria%20de%20consultoria%20sobre%20a%20coleção%20de%20alfaiataria%20italiana." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" id="nav-btn-whatsapp">
+          <svg class="btn-icon-tag" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.983.536 1.772.82 2.796.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.385-.45-4.819-1.238l-5.181 1.358 1.385-5.059c-.896-1.503-1.385-3.238-1.385-5.061 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/></svg>
+          <span>WhatsApp VIP</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer">
+    <div>
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <span class="logo-main">MadeinItaly<span>.com</span></span>
+          <span class="logo-sub">Alfaiataria Masculina</span>
+        </div>
+        <button class="modal-close-btn" id="drawer-close" aria-label="Fechar Menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#manifesto" class="mobile-link">Manifesto</a></li>
+        <li><a href="#selezione" class="mobile-link">La Selezione</a></li>
+        <li><a href="#tessuti" class="mobile-link">I Tessuti</a></li>
+        <li><a href="#ecommerce-spotlight" class="mobile-link">Boutique Online</a></li>
+        <li><a href="#guida-stile" class="mobile-link">Guia de Estilo</a></li>
+        <li><a href="#concierge" class="mobile-link">Concierge & Visitas</a></li>
+      </ul>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+      <a href="#ecommerce-spotlight" class="btn btn-ecommerce mobile-link">Acessar E-commerce</a>
+      <a href="https://wa.me/5511978365191?text=Olá!%20Gostaria%20de%20atendimento%20VIP." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Atendimento WhatsApp</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- 02. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content reveal-on-scroll">
+            <div class="hero-tag">
+              <span class="italian-badge">Sartoria Italiana · Curadoria Exclusiva</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Alfaiataria que define a sua <span>presença.</span>
+            </h1>
+
+            <p class="hero-tagline">
+              "Quando o tecido, o corte e o acabamento falam antes de você."
+            </p>
+
+            <p class="hero-description">
+              Outlet de alfaiataria masculina premium. Acesso facilitado a blazers impecáveis, confeccionados com as mais nobres tecelagens de Biella e Como, sem ostentação e com elegância atemporal.
+            </p>
+
+            <!-- Dual Action CTAs -->
+            <div class="hero-actions">
+              <a href="#ecommerce-spotlight" class="btn btn-ecommerce" id="hero-btn-ecom">
+                <svg class="btn-icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <span>Explorar E-commerce</span>
+              </a>
+              <a href="https://wa.me/5511978365191?text=Olá!%20Quero%20conhecer%20a%20curadoria%20de%20blazers%20italianos%20e%20solicitar%20consultoria%20de%20caimento." target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="hero-btn-consultoria">
+                <span>Consultoria com Alfaiate</span>
+                <span style="font-size: 1.1rem; line-height: 1;">&rarr;</span>
+              </a>
+            </div>
+
+            <!-- Credentials -->
+            <div class="hero-credentials">
+              <div class="credential-item">
+                <span class="credential-number">100%</span>
+                <span class="credential-label">Origem Italiana</span>
+              </div>
+              <div class="credential-item">
+                <span class="credential-number">1663</span>
+                <span class="credential-label">Tradição Sartorial</span>
+              </div>
+              <div class="credential-item">
+                <span class="credential-number">Quiet</span>
+                <span class="credential-label">Luxo Silencioso</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Editorial Visual -->
+          <div class="hero-visual reveal-on-scroll delay-2">
+            <div class="hero-image-wrapper">
+              <img src="assets/hero_editorial_model_1788187467145.jpg" alt="Blazer Masculino Italiano de Alta Costura" width="1280" height="720" loading="eager">
+              <div class="hero-badge-overlay">
+                <div class="badge-title">Navy Milano Sartoriale</div>
+                <div class="badge-sub">100% Lã Virgem · Vitale Barberis Canonico</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. BRAND VALUES STRIP -->
+    <section class="brand-strip">
+      <div class="container">
+        <div class="strip-grid">
+          
+          <div class="strip-item">
+            <div class="strip-icon">&#10022;</div>
+            <div class="strip-text">
+              <h4>Tecelagens Históricas</h4>
+              <p>Fios nobres de Biella: Vitale Barberis Canonico, Loro Piana e Reda.</p>
+            </div>
+          </div>
+
+          <div class="strip-item">
+            <div class="strip-icon">&#9878;</div>
+            <div class="strip-text">
+              <h4>Corte Italiano Autêntico</h4>
+              <p>Estrutura leve, ombro natural sartorial e forro em cupro respirável.</p>
+            </div>
+          </div>
+
+          <div class="strip-item">
+            <div class="strip-icon">&#128081;</div>
+            <div class="strip-text">
+              <h4>Preço de Curadoria Outlet</h4>
+              <p>Peças exclusivas com até 60% de vantagem sobre a alta costura tradicional.</p>
+            </div>
+          </div>
+
+          <div class="strip-item">
+            <div class="strip-icon">&#128717;</div>
+            <div class="strip-text">
+              <h4>Boutique & WhatsApp VIP</h4>
+              <p>Compre online com segurança ou agende atendimento privativo com consultor.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. MANIFESTO (01 — L'ESSENZA) -->
+    <section class="section" id="manifesto">
+      <div class="container">
+        <div class="manifesto-grid">
+          
+          <div class="manifesto-visual reveal-on-scroll">
+            <div class="manifesto-image-board">
+              <img src="assets/blazer_sand_havana_1788187588588.jpg" alt="Elegância Silenciosa - Blazer Italiano" loading="lazy">
+            </div>
+          </div>
+
+          <div class="manifesto-text reveal-on-scroll delay-1">
+            <span class="editorial-number">01 — L'Essenza</span>
+            <h2 class="section-title">
+              O luxo não precisa gritar. <em>Ele é percebido.</em>
+            </h2>
+            
+            <blockquote class="manifesto-quote">
+              "A verdadeira elegância está no silêncio visual: na fluidez da lã fria, na curvatura precisa da lapela e no caimento sem esforço."
+            </blockquote>
+
+            <p class="manifesto-body">
+              A <strong>MadeinItaly</strong> nasceu da convicção de que homens que lideram não buscam logotipos ostensivos, mas sim a excelência de materiais e a arquitetura do corte. Como outlet especializado, selecionamos lotes limitados e peças de alta alfaiataria importadas diretamente da Itália, oferecendo o mais alto padrão com valor inteligente.
+            </p>
+
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <h5>Tradição & Matéria</h5>
+                <p>Fibras 100% naturais: lã fria Super 120s a 150s, linho e seda pura.</p>
+              </div>
+              <div class="pillar-card">
+                <h5>Presença & Postura</h5>
+                <p>Modelagens que valorizam a silhueta masculina com conforto extremo.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. LA SELEZIONE (02 — LOOKBOOK & VITRINE) -->
+    <section class="section" id="selezione" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        
+        <div class="lookbook-header reveal-on-scroll">
+          <div>
+            <span class="editorial-number">02 — La Selezione</span>
+            <h2 class="section-title">
+              Curadoria de <em>Blazers Italianos</em>
+            </h2>
+            <p class="section-subtitle">
+              Selecione uma categoria para visualizar as peças em estoque. Todas acompanham ficha técnica detalhada e opções de compra via E-commerce ou WhatsApp.
+            </p>
+          </div>
+
+          <div class="lookbook-filters" id="lookbook-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="wool">Lã Pura Super 130s</button>
+            <button class="filter-btn" data-filter="linen">Linho Nobre</button>
+            <button class="filter-btn" data-filter="doppiopetto">Doppiopetto</button>
+            <button class="filter-btn" data-filter="smart">Smart Casual</button>
+          </div>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+          
+          <!-- Product Card 1 -->
+          <article class="product-card reveal-on-scroll" data-category="wool smart" data-id="blazer-01">
+            <div class="product-image-box">
+              <span class="product-number-tag">01 · DESTAQUE</span>
+              <span class="product-tag-mill">Vitale Barberis</span>
+              <img src="assets/blazer_navy_milano_1788187526144.jpg" alt="Blazer Navy Milano" loading="lazy">
+              <div class="product-quick-sheet">
+                <button class="btn btn-primary btn-sm btn-open-sheet" data-target="blazer-01">Ver Ficha Técnica</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Lã Pura · 2 Botões</span>
+              <h3 class="product-title">Navy Milano Sartoriale</h3>
+              <p class="product-specs-snippet">Lã 100% Super 130s da tecelagem Vitale Barberis Canonico. Corte clássico italiano com forro em cupro acetinado.</p>
+              <div class="product-actions-group">
+                <a href="#ecommerce-spotlight" class="btn btn-ecommerce btn-sm">
+                  <span>Comprar no E-commerce</span>
+                </a>
+                <a href="https://wa.me/5511978365191?text=Olá!%20Tenho%20interesse%20no%20Blazer%20Navy%20Milano%20(Ref:%2001)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  <span>Pedir no WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2 -->
+          <article class="product-card reveal-on-scroll delay-1" data-category="linen smart" data-id="blazer-02">
+            <div class="product-image-box">
+              <span class="product-number-tag">02 · LINHO</span>
+              <span class="product-tag-mill">Tessuto Italiano</span>
+              <img src="assets/blazer_sand_havana_1788187588588.jpg" alt="Blazer Sand Havana" loading="lazy">
+              <div class="product-quick-sheet">
+                <button class="btn btn-primary btn-sm btn-open-sheet" data-target="blazer-02">Ver Ficha Técnica</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Linho & Lã · Verão Nobre</span>
+              <h3 class="product-title">Sand Havana Riviera</h3>
+              <p class="product-specs-snippet">Trama texturizada em blend de linho italiano e lã tropical. Caimento desestruturado e botões em madrepérola fosca.</p>
+              <div class="product-actions-group">
+                <a href="#ecommerce-spotlight" class="btn btn-ecommerce btn-sm">
+                  <span>Comprar no E-commerce</span>
+                </a>
+                <a href="https://wa.me/5511978365191?text=Olá!%20Tenho%20interesse%20no%20Blazer%20Sand%20Havana%20Riviera%20(Ref:%2002)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  <span>Pedir no WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 3 -->
+          <article class="product-card reveal-on-scroll delay-2" data-category="wool doppiopetto" data-id="blazer-03">
+            <div class="product-image-box">
+              <span class="product-number-tag">03 · DUPLO BOTÃO</span>
+              <span class="product-tag-mill">Loro Piana Weave</span>
+              <img src="assets/blazer_charcoal_roma_1788187655812.jpg" alt="Blazer Charcoal Roma Doppiopetto" loading="lazy">
+              <div class="product-quick-sheet">
+                <button class="btn btn-primary btn-sm btn-open-sheet" data-target="blazer-03">Ver Ficha Técnica</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Doppiopetto · Lapela Larga</span>
+              <h3 class="product-title">Charcoal Roma Executive</h3>
+              <p class="product-specs-snippet">Paletó de abotoamento duplo em lã cinza chumbo de alta densidade. Presença executiva marcante e lapela em bico.</p>
+              <div class="product-actions-group">
+                <a href="#ecommerce-spotlight" class="btn btn-ecommerce btn-sm">
+                  <span>Comprar no E-commerce</span>
+                </a>
+                <a href="https://wa.me/5511978365191?text=Olá!%20Tenho%20interesse%20no%20Blazer%20Charcoal%20Roma%20(Ref:%2003)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  <span>Pedir no WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 4 -->
+          <article class="product-card reveal-on-scroll delay-3" data-category="wool smart" data-id="blazer-04">
+            <div class="product-image-box">
+              <span class="product-number-tag">04 · TWEED & LÃ</span>
+              <span class="product-tag-mill">Reda Sartoria</span>
+              <img src="assets/blazer_olive_firenze_1788187801813.jpg" alt="Blazer Olive Firenze" loading="lazy">
+              <div class="product-quick-sheet">
+                <button class="btn btn-primary btn-sm btn-open-sheet" data-target="blazer-04">Ver Ficha Técnica</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Herringbone · Verde Oliva</span>
+              <h3 class="product-title">Olive Firenze Espinha</h3>
+              <p class="product-specs-snippet">Padronagem espinha de peixe discreta em tom oliva nobre. Perfeito para noites de eventos e reuniões de negócios de inverno.</p>
+              <div class="product-actions-group">
+                <a href="#ecommerce-spotlight" class="btn btn-ecommerce btn-sm">
+                  <span>Comprar no E-commerce</span>
+                </a>
+                <a href="https://wa.me/5511978365191?text=Olá!%20Tenho%20interesse%20no%20Blazer%20Olive%20Firenze%20(Ref:%2004)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  <span>Pedir no WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. I TESSUTI PREGIATI (03 — TECIDOS NOBRES & DETALHES) -->
+    <section class="section fabrics-section" id="tessuti">
+      <div class="container">
+        <div class="fabrics-grid">
+          
+          <div class="fabrics-content reveal-on-scroll">
+            <span class="editorial-number">03 — I Tessuti Pregiati</span>
+            <h2 class="section-title">
+              A alma da peça está na <em>origem do fio.</em>
+            </h2>
+            
+            <p class="manifesto-body">
+              Cada blazer do nosso acervo é fruto de séculos de tradição têxtil do norte da Itália. Fios finos de lã penteada, respirabilidade natural e toque aveludado que resistem ao amassamento e mantêm a imponência o dia todo.
+            </p>
+
+            <div class="mills-list">
+              <div class="mill-item">
+                <span class="mill-year">1663</span>
+                <div class="mill-info">
+                  <h5>Vitale Barberis Canonico (Biella)</h5>
+                  <p>A tecelagem mais antiga do mundo em operação ininterrupta. Referência global em lãs Super 110s a 150s.</p>
+                </div>
+              </div>
+
+              <div class="mill-item">
+                <span class="mill-year">1924</span>
+                <div class="mill-info">
+                  <h5>Loro Piana & Reda Heritage</h5>
+                  <p>Fibras raras selecionadas para máxima maciez, caimento fluido e acabamento acetinado de alta costura.</p>
+                </div>
+              </div>
+
+              <div class="mill-item">
+                <span class="mill-year">100%</span>
+                <div class="mill-info">
+                  <h5>Aviamentos Sartoriais Genuínos</h5>
+                  <p>Botões naturais de chifre de búfalo esculpidos à mão, forros respiráveis e ombreiras com enchimento de crina de cavalo italiana.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fabrics-visual reveal-on-scroll delay-2">
+            <div class="fabric-macro-box" id="fabric-zoom-box">
+              <img src="assets/fabric_wool_texture_1788187726724.jpg" alt="Macro textura Lã Italiana Super 130s com botão de chifre" loading="lazy">
+              
+              <!-- Interactive Hotspots -->
+              <div class="fabric-hotspots">
+                <div class="fabric-hotspot" style="top: 50%; left: 50%;" title="Botão de Chifre Natural" data-tooltip="Botão de Chifre Natural Italiano">1</div>
+                <div class="fabric-hotspot" style="top: 25%; left: 65%;" title="Trama Twill 100% Lã Super 130s" data-tooltip="Trama Twill Lã Virgem">2</div>
+                <div class="fabric-hotspot" style="top: 45%; left: 75%;" title="Caseado Milansês Feito à Mão" data-tooltip="Caseado Sartorial">3</div>
+              </div>
+            </div>
+            <p style="text-align: center; font-size: 0.75rem; color: var(--color-muted); margin-top: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">
+              Passe o mouse para inspecionar a densidade da trama Super 130s
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. E-COMMERCE HIGHLIGHT BANNER (04 — BOUTIQUE DIGITALE) -->
+    <section class="section" id="ecommerce-spotlight" style="padding-top: 3rem; padding-bottom: 3rem;">
+      <div class="container">
+        
+        <div class="ecommerce-banner-box reveal-on-scroll">
+          <div class="ecommerce-content-grid">
+            
+            <div>
+              <span class="italian-badge" style="margin-bottom: 1.2rem;">Boutique Digitale · Nova Experiência</span>
+              <h2 class="section-title" style="margin-bottom: 1rem;">
+                Compre sua alfaiataria online com <em>segurança de alta costura.</em>
+              </h2>
+              <p class="section-subtitle" style="max-width: 580px;">
+                Nosso e-commerce exclusivo reúne o estoque completo do outlet com navegação intuitiva, fotos em alta fidelidade cromática, guia de medidas 3D e entrega expressa para todo o Brasil.
+              </p>
+
+              <div class="ecommerce-features">
+                <div class="ecom-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  <p><strong>Envio Premium Nacional:</strong> Peça embalada em porta-ternos respirável com cabide de cedro.</p>
+                </div>
+                <div class="ecom-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  <p><strong>Troca Garantida Grátis:</strong> 30 dias para ajuste ou troca de numeração sem custo adicional.</p>
+                </div>
+                <div class="ecom-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  <p><strong>Parcelamento sem Juros:</strong> Até 10x sem acréscimo nos cartões de crédito.</p>
+                </div>
+                <div class="ecom-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  <p><strong>Suporte por Alfaiate Online:</strong> Validação de medidas antes do envio pelo WhatsApp.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+                <a href="https://madeinitalyoutlet.com.br" target="_blank" rel="noopener" class="btn btn-ecommerce" style="padding: 1.1rem 2.2rem; font-size: 0.9rem;">
+                  <svg class="btn-icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                  <span>Acessar E-commerce Oficial</span>
+                </a>
+                <a href="https://wa.me/5511978365191?text=Olá!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20as%20compras%20no%20e-commerce." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                  <span>Dúvidas com Concierge</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- E-commerce Live Status Card -->
+            <div class="ecom-card-mockup">
+              <div class="ecom-status-badge">
+                <span class="dot"></span>
+                <span>Plataforma Oficial Online</span>
+              </div>
+              <div style="font-family: var(--font-serif); font-size: 2.2rem; line-height: 1.1; color: var(--color-beige-italian);">
+                MadeinItaly<br><span style="font-size: 1.2rem; color: var(--color-offwhite); font-family: var(--font-sans); letter-spacing: 0.15em; font-weight: 300;">OUTLET OFICIAL</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-muted); line-height: 1.6;">
+                Navegue pelas coleções, selecione seu tamanho (46 a 62) e receba em sua residência ou escritório com elegância garantida.
+              </p>
+              <a href="https://madeinitalyoutlet.com.br" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="width: 100%;">
+                Entrar na Loja Virtual &rarr;
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 08. GUIDA ALLO STILE (05 — ASSISTENTE INTERATIVO DE CAIMENTO) -->
+    <section class="section" id="guida-stile">
+      <div class="container">
+        
+        <div style="text-align: center; margin-bottom: 3.5rem;" class="reveal-on-scroll">
+          <span class="editorial-number">05 — Guida allo Stile</span>
+          <h2 class="section-title">
+            Encontre o caimento perfeito para a sua <em>ocasião.</em>
+          </h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Responda 3 perguntas rápidas para que nosso sistema recomende a modelagem ideal e prepare seu atendimento direto no WhatsApp ou E-commerce.
+          </p>
+        </div>
+
+        <div class="fit-assistant-box reveal-on-scroll">
+          
+          <div class="quiz-steps-tracker">
+            <div class="quiz-step-dot active" id="step-dot-1"></div>
+            <div class="quiz-step-dot" id="step-dot-2"></div>
+            <div class="quiz-step-dot" id="step-dot-3"></div>
+          </div>
+
+          <div class="quiz-container">
+            
+            <!-- Step 1: Ocasião -->
+            <div class="quiz-question active" id="quiz-step-1">
+              <h4>1. Qual é a ocasião principal de uso?</h4>
+              <div class="quiz-options-grid">
+                <button class="quiz-option-btn" data-step="1" data-val="Executivo & Negócios">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                  <span>Reuniões & Negócios</span>
+                </button>
+                <button class="quiz-option-btn" data-step="1" data-val="Casamento & Eventos">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Noivo / Eventos Sociais</span>
+                </button>
+                <button class="quiz-option-btn" data-step="1" data-val="Smart Casual & Jantares">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+                  <span>Smart Casual & Jantares</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Estilo de Caimento -->
+            <div class="quiz-question" id="quiz-step-2">
+              <h4>2. Qual modelagem você prefere no corpo?</h4>
+              <div class="quiz-options-grid">
+                <button class="quiz-option-btn" data-step="2" data-val="Slim Sartorial Italiano">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                  <span>Slim Ajustado ao Corpo</span>
+                </button>
+                <button class="quiz-option-btn" data-step="2" data-val="Clássico Estruturado">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                  <span>Clássico & Confortável</span>
+                </button>
+                <button class="quiz-option-btn" data-step="2" data-val="Doppiopetto Imponente">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="1"/><circle cx="15" cy="9" r="1"/><circle cx="9" cy="15" r="1"/><circle cx="15" cy="15" r="1"/></svg>
+                  <span>Duplo Botão (Imponente)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Tom Predileto -->
+            <div class="quiz-question" id="quiz-step-3">
+              <h4>3. Qual paleta de cores mais combina com seu estilo?</h4>
+              <div class="quiz-options-grid">
+                <button class="quiz-option-btn" data-step="3" data-val="Azul Marinho & Preto">
+                  <span style="width: 22px; height: 22px; border-radius: 50%; background: #172433; border: 1px solid #c7ae8d;"></span>
+                  <span>Azul-Marinho / Preto</span>
+                </button>
+                <button class="quiz-option-btn" data-step="3" data-val="Tons Terrosos & Bege Areia">
+                  <span style="width: 22px; height: 22px; border-radius: 50%; background: #c7ae8d; border: 1px solid #f4f0e9;"></span>
+                  <span>Bege Italiano / Areia</span>
+                </button>
+                <button class="quiz-option-btn" data-step="3" data-val="Cinza Chumbo & Verde Oliva">
+                  <span style="width: 22px; height: 22px; border-radius: 50%; background: #3e4638; border: 1px solid #68635c;"></span>
+                  <span>Verde Oliva / Grafite</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Result Card -->
+            <div class="quiz-result-card" id="quiz-result">
+              <span class="editorial-number">Recomendação do Alfaiate</span>
+              <h3 style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-offwhite); margin: 0.8rem 0;" id="quiz-result-title">
+                Blazer Navy Milano Sartoriale
+              </h3>
+              <p style="color: var(--color-muted); font-size: 0.95rem; max-width: 540px; margin: 0 auto 2rem auto;" id="quiz-result-desc">
+                Ideal para sua preferência executiva com caimento sartorial em lã 100% Super 130s.
+              </p>
+              
+              <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                <a href="#" id="quiz-whatsapp-cta" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                  <span>Confirmar com Alfaiate no WhatsApp</span>
+                </a>
+                <a href="#ecommerce-spotlight" class="btn btn-ecommerce">
+                  <span>Ver Opções no E-commerce</span>
+                </a>
+                <button class="btn btn-outline btn-sm" id="quiz-restart-btn">Reiniciar Teste</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 09. INSTAGRAM EDITORIAL FEED -->
+    <section class="section" id="instagram-feed" style="background: var(--bg-secondary);">
+      <div class="container">
+        
+        <div class="instagram-header reveal-on-scroll">
+          <span class="editorial-number">06 — Instagram</span>
+          <h2 class="section-title">
+            <em>@madeinitalysaopaulo</em>
+          </h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Acompanhe o acervo em tempo real, bastidores da curadoria na Itália e inspirações diárias de estilo masculino.
+          </p>
+        </div>
+
+        <div class="instagram-grid reveal-on-scroll">
+          <a href="https://instagram.com/madeinitalysaopaulo" target="_blank" rel="noopener" class="insta-card">
+            <img src="assets/blazer_navy_milano_1788187526144.jpg" alt="Post Instagram MadeinItaly" loading="lazy">
+            <div class="insta-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              <span>Ver no Instagram</span>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/madeinitalysaopaulo" target="_blank" rel="noopener" class="insta-card">
+            <img src="assets/blazer_sand_havana_1788187588588.jpg" alt="Post Instagram MadeinItaly" loading="lazy">
+            <div class="insta-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              <span>Ver no Instagram</span>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/madeinitalysaopaulo" target="_blank" rel="noopener" class="insta-card">
+            <img src="assets/blazer_charcoal_roma_1788187655812.jpg" alt="Post Instagram MadeinItaly" loading="lazy">
+            <div class="insta-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              <span>Ver no Instagram</span>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/madeinitalysaopaulo" target="_blank" rel="noopener" class="insta-card">
+            <img src="assets/blazer_olive_firenze_1788187801813.jpg" alt="Post Instagram MadeinItaly" loading="lazy">
+            <div class="insta-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              <span>Ver no Instagram</span>
+            </div>
+          </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="https://instagram.com/madeinitalysaopaulo" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+            Seguir @madeinitalysaopaulo &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. VIP CONCIERGE & ATELIER BOOKING -->
+    <section class="section concierge-section" id="concierge">
+      <div class="container">
+        
+        <div style="text-align: center;" class="reveal-on-scroll">
+          <span class="editorial-number">07 — Atendimento VIP</span>
+          <h2 class="section-title">
+            Duas formas exclusivas de <em>vestir a Itália.</em>
+          </h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Escolha entre o atendimento presencial sob agendamento ou a conveniência de compra direta no e-commerce oficial.
+          </p>
+        </div>
+
+        <div class="concierge-cards-grid">
+          
+          <!-- Card 1: WhatsApp Concierge -->
+          <div class="concierge-card reveal-on-scroll delay-1">
+            <div class="concierge-card-header">
+              <div class="concierge-icon-circle">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.983.536 1.772.82 2.796.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.385-.45-4.819-1.238l-5.181 1.358 1.385-5.059c-.896-1.503-1.385-3.238-1.385-5.061 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/></svg>
+              </div>
+              <h3>Consultoria Privativa & WhatsApp VIP</h3>
+              <p>
+                Atendimento individualizado para noivos, executivos e clientes que buscam conferir medidas, caimento e reserva de peças raras com nosso consultor especialista.
+              </p>
+            </div>
+            <div>
+              <a href="https://wa.me/5511978365191?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento%20privativo%20com%20o%20consultor%20MadeinItaly." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+                <span>Iniciar Conversa no WhatsApp</span>
+              </a>
+              <p style="font-size: 0.72rem; color: var(--color-muted); text-align: center; margin-top: 0.8rem;">
+                +55 (11) 97836-5191 · São Paulo / SP
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: E-commerce Boutique -->
+          <div class="concierge-card reveal-on-scroll delay-2">
+            <div class="concierge-card-header">
+              <div class="concierge-icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              </div>
+              <h3>Boutique E-commerce Oficial</h3>
+              <p>
+                Acesso imediato a todo o catálogo de blazers, calças e acessórios de alfaiataria italiana com fotos em alta definição, carrinho seguro e entrega rápida em domicílio.
+              </p>
+            </div>
+            <div>
+              <a href="https://madeinitalyoutlet.com.br" target="_blank" rel="noopener" class="btn btn-ecommerce" style="width: 100%;">
+                <span>Acessar Loja Virtual Agora</span>
+              </a>
+              <p style="font-size: 0.72rem; color: var(--color-muted); text-align: center; margin-top: 0.8rem;">
+                madeinitalyoutlet.com.br · Entrega Segura em Todo o Brasil
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. FICHA TÉCNICA MODAL -->
+  <div class="modal-backdrop" id="tech-sheet-modal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Fechar">&times;</button>
+      <div class="modal-grid">
+        <div class="modal-image-col">
+          <img src="assets/blazer_navy_milano_1788187526144.jpg" alt="Blazer Ficha Técnica" id="modal-img">
+        </div>
+        <div class="modal-body">
+          <span class="editorial-number" id="modal-num">01 · FICHA TÉCNICA</span>
+          <h3 class="section-title" style="font-size: 2rem; margin-bottom: 0.5rem;" id="modal-title">Navy Milano Sartoriale</h3>
+          <p style="font-size: 0.85rem; color: var(--color-muted);" id="modal-desc">
+            Blazer clássico italiano confeccionado com as mais finas fibras de lã virgem.
+          </p>
+
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td class="label">Tecelagem</td>
+                <td class="value" id="modal-mill">Vitale Barberis Canonico (Itália)</td>
+              </tr>
+              <tr>
+                <td class="label">Composição</td>
+                <td class="value" id="modal-composition">100% Lã Virgem Super 130s</td>
+              </tr>
+              <tr>
+                <td class="label">Modelagem</td>
+                <td class="value" id="modal-fit">Corte Italiano Slim Estruturado</td>
+              </tr>
+              <tr>
+                <td class="label">Botões</td>
+                <td class="value" id="modal-buttons">2 Botões em Chifre Natural</td>
+              </tr>
+              <tr>
+                <td class="label">Forro</td>
+                <td class="value" id="modal-lining">100% Viscose / Cupro Respirável</td>
+              </tr>
+              <tr>
+                <td class="label">Tamanhos</td>
+                <td class="value" id="modal-sizes">46, 48, 50, 52, 54, 56, 58</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="display: flex; flex-direction: column; gap: 0.7rem; margin-top: 1.5rem;">
+            <a href="https://madeinitalyoutlet.com.br" target="_blank" rel="noopener" class="btn btn-ecommerce" id="modal-ecom-cta">
+              Comprar esta Peça no E-commerce
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="modal-whatsapp-cta">
+              Consultar Disponibilidade no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12. FOOTER INSTITUCIONAL -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="logo-main">MadeinItaly<span>.com</span></span>
+            <span class="logo-sub">Alfaiataria Masculina</span>
+          </div>
+          <p>
+            Outlet premium de alfaiataria masculina italiana. Curadoria de blazers, paletós e tecidos nobres com presença inconfundível e acesso facilitado.
+          </p>
+          <div class="italian-badge">Quiet Luxury · Sem Ostentação</div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="#manifesto">Manifesto & Essência</a></li>
+            <li><a href="#selezione">La Selezione (Lookbook)</a></li>
+            <li><a href="#tessuti">I Tessuti (Tecelagens)</a></li>
+            <li><a href="#guida-stile">Guia de Caimento</a></li>
+            <li><a href="#concierge">Agendamento & Visitas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Canais de Compra</h5>
+          <ul class="footer-links">
+            <li><a href="https://madeinitalyoutlet.com.br" target="_blank" rel="noopener" style="color: var(--color-beige-italian); font-weight: 500;">&rarr; E-commerce Oficial</a></li>
+            <li><a href="https://wa.me/5511978365191" target="_blank" rel="noopener">&rarr; Atendimento WhatsApp VIP</a></li>
+            <li><a href="https://instagram.com/madeinitalysaopaulo" target="_blank" rel="noopener">&rarr; Instagram Oficial</a></li>
+            <li><a href="#ecommerce-spotlight">Política de Envios & Trocas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Showroom & Contato</h5>
+          <p style="font-size: 0.85rem; color: var(--color-muted); line-height: 1.7; margin-bottom: 1rem;">
+            São Paulo / SP — Brasil<br>
+            WhatsApp: +55 (11) 97836-5191<br>
+            Atendimento com hora marcada.
+          </p>
+          <span style="font-size: 0.75rem; color: var(--color-beige-sand); letter-spacing: 0.05em;">
+            "Alfaiataria italiana, presença inconfundível."
+          </span>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 MadeinItaly Outlet. Todos os direitos reservados.</p>
+        <p>Desenvolvido com diretrizes oficiais de Identidade Visual e Quiet Luxury.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
