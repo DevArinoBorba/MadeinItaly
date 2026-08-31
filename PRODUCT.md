@@ -24,7 +24,7 @@ MadeinItaly Outlet (madeinitalyoutlet.com.br) is a curated online outlet selling
 - There is **no physical showroom, atelier, or in-person appointment/consultation service.** The site's copy and recent commit history (`refactor: substituir termo Boutique por Outlet`, `fix: remover referencias a alfaiate e focar exclusivamente em vendas de produtos do outlet`) deliberately removed bespoke-tailor/consultant/"atelier booking" framing in favor of pure ready-to-wear retail language. Do not reintroduce booking-a-consultant, made-to-measure, or "alfaiate" (tailor) framing without an explicit request.
 - A fit-guidance quiz on the site (3 questions: occasion, cut preference, color palette) recommends a specific in-stock blazer and routes the visitor to WhatsApp or the e-commerce store — it is a merchandising/conversion tool, not a bespoke consultation.
 - Free size exchange within 30 days; up to 10x interest-free installment payment; national shipping across Brazil.
-- Instagram presence: @madeinitalysaopaulo.
+- Instagram presence: @madeintalysp.
 
 ## Capabilities and Constraints
 
