@@ -302,10 +302,12 @@ button {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0%;
+  width: 100%;
   height: 1px;
   background-color: var(--color-beige-italian);
-  transition: width var(--transition-fast);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-fast);
 }
 
 .nav-link:hover, .nav-link.active {
@@ -313,13 +315,28 @@ button {
 }
 
 .nav-link:hover::after, .nav-link.active::after {
-  width: 100%;
+  transform: scaleX(1);
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 0.9rem;
+}
+
+/* Ecommerce/WhatsApp CTAs live in the mobile drawer below 1024px; showing
+   them in the navbar too pushes #mobile-toggle off the viewport and makes
+   the menu unreachable on phones. */
+#nav-btn-ecom,
+#nav-btn-whatsapp {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #nav-btn-ecom,
+  #nav-btn-whatsapp {
+    display: inline-flex;
+  }
 }
 
 /* ==========================================================================
