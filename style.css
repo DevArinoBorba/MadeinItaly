@@ -1754,6 +1754,41 @@ button {
   }
 }
 
+.footer-developer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+.orium-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-offwhite);
+  transition: opacity 0.25s ease, transform 0.25s ease, filter 0.25s ease;
+}
+
+.orium-link:hover {
+  color: var(--color-beige-italian);
+  transform: translateY(-1px);
+  filter: drop-shadow(0 2px 8px rgba(199, 174, 141, 0.4));
+}
+
+.orium-logo-img {
+  height: 22px;
+  width: auto;
+  display: block;
+  opacity: 0.95;
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+.orium-link:hover .orium-logo-img {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.45));
+}
+
 /* ==========================================================================
    ANIMATIONS & SCROLL REVEAL UTILITIES
    ========================================================================== */
