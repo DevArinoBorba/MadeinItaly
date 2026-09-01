@@ -322,4 +322,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ==========================================================================
+     08. PROMO POPUP MODAL (12X SEM JUROS)
+     ========================================================================== */
+  const promoModal = document.getElementById('promo-modal');
+  const promoCloseBtn = document.getElementById('promo-close-btn');
+  const promoDismissBtn = document.getElementById('promo-dismiss-btn');
+
+  function openPromoModal() {
+    if (!promoModal) return;
+    promoModal.classList.add('active');
+    promoModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePromoModal() {
+    if (!promoModal) return;
+    promoModal.classList.remove('active');
+    promoModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (promoModal) {
+    // Exibe suavemente 800ms após o carregamento da página
+    setTimeout(() => {
+      openPromoModal();
+    }, 800);
+
+    if (promoCloseBtn) promoCloseBtn.addEventListener('click', closePromoModal);
+    if (promoDismissBtn) promoDismissBtn.addEventListener('click', closePromoModal);
+
+    promoModal.addEventListener('click', (e) => {
+      if (e.target === promoModal) {
+        closePromoModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && promoModal.classList.contains('active')) {
+        closePromoModal();
+      }
+    });
+  }
+
 });
+

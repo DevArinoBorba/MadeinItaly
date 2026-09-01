@@ -1788,3 +1788,220 @@ button {
     transform: none !important;
   }
 }
+
+/* ==========================================================================
+   12. PROMO POPUP MODAL (12X SEM JUROS)
+   ========================================================================== */
+
+.promo-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 7, 6, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.promo-modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.promo-modal-dialog {
+  background: linear-gradient(160deg, #1A1614 0%, #100E0C 100%);
+  border: 1px solid rgba(199, 174, 141, 0.35);
+  border-radius: var(--radius-md);
+  max-width: 540px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85), 0 0 35px rgba(199, 174, 141, 0.12);
+  transform: scale(0.92) translateY(24px);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  padding: 2.6rem 2rem 2.2rem;
+}
+
+.promo-modal-dialog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-beige-italian), transparent);
+}
+
+.promo-modal-backdrop.active .promo-modal-dialog {
+  transform: scale(1) translateY(0);
+}
+
+.promo-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(199, 174, 141, 0.25);
+  color: var(--color-beige-italian);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+.promo-close-btn:hover {
+  background: var(--color-beige-italian);
+  color: var(--color-black);
+  transform: scale(1.08) rotate(90deg);
+}
+
+.promo-badge-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.promo-badge-img {
+  width: 112px;
+  height: 112px;
+  filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.7));
+  animation: floatBadge 6s ease-in-out infinite alternate;
+}
+
+.promo-tag {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-beige-italian);
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.promo-title {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  color: var(--color-offwhite);
+  text-align: center;
+  line-height: 1.15;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.promo-title em {
+  color: var(--color-beige-italian);
+  font-style: italic;
+}
+
+.promo-description {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  text-align: center;
+  line-height: 1.6;
+  max-width: 440px;
+  margin: 0 auto 1.4rem;
+}
+
+.promo-description strong {
+  color: var(--color-offwhite);
+  font-weight: 600;
+}
+
+.promo-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.promo-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.76rem;
+  color: var(--color-beige-sand);
+  background: rgba(199, 174, 141, 0.08);
+  border: 1px solid rgba(199, 174, 141, 0.2);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.promo-benefit-item svg {
+  width: 13px;
+  height: 13px;
+  stroke: var(--color-beige-italian);
+  flex-shrink: 0;
+}
+
+.promo-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.promo-btn-primary {
+  width: 100%;
+  padding: 0.95rem 1.5rem;
+  font-size: 0.88rem;
+  justify-content: center;
+}
+
+.promo-btn-whatsapp {
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.85rem;
+  justify-content: center;
+}
+
+.promo-dismiss-link {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: rgba(184, 179, 170, 0.55);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  display: block;
+  margin: 1rem auto 0;
+  transition: color 0.2s ease;
+  letter-spacing: 0.02em;
+}
+
+.promo-dismiss-link:hover {
+  color: var(--color-beige-italian);
+}
+
+@media (max-width: 520px) {
+  .promo-modal-dialog {
+    padding: 2.2rem 1.25rem 1.8rem;
+  }
+  
+  .promo-title {
+    font-size: 1.75rem;
+  }
+  
+  .promo-badge-img {
+    width: 95px;
+    height: 95px;
+  }
+}
