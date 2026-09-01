@@ -34,7 +34,7 @@ MadeinItaly Outlet (madeinitalyoutlet.com.br) is a curated online outlet selling
 
 ## Brand Commitments
 
-- Name/domain: "MadeinItaly.com" / "MadeinItaly Outlet" (madeinitalyoutlet.com.br). Tagline: "Alfaiataria italiana, presença inconfundível." ("Italian tailoring, unmistakable presence.")
+- Name/domain: "MadeinItaly.com.br" / "MadeinItaly Outlet" (madeinitalyoutlet.com.br). Tagline: "Alfaiataria italiana, presença inconfundível." ("Italian tailoring, unmistakable presence.")
 - A binding brand identity system exists at `identidadevisual Madeinitaly.pdf` (originally scoped to Instagram, but its palette and type are already implemented verbatim in `style.css` and govern the website too):
   - Palette: Preto profundo #0B0A09, Bege italiano #C7AE8D, Off-white #F4F0E9, Marrom espresso #33261F, plus Bege areia #D7C3A8, Creme #EAE0D1, Marrom couro #5A4031, Cinza alfaiataria #68635C, Azul-marinho #172433, Verde oliva #3E4638.
   - Typography: Cormorant Garamond (serif, headlines/editorial) + Manrope (sans, specs/CTAs/labels).
