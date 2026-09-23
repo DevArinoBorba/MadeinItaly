@@ -2040,3 +2040,124 @@ button {
     height: 95px;
   }
 }
+
+/* ==========================================================================
+   LOJA ONLINE EM DESENVOLVIMENTO (BOTÕES TEMPORARIAMENTE OCULTOS)
+   Para reativar a loja oficial quando estiver 100% pronta, basta remover
+   esta regra ou a classe .loja-em-breve-oculto dos elementos em index.html.
+   ========================================================================== */
+.loja-em-breve-oculto {
+  display: none !important;
+}
+
+/* Hero WhatsApp Primary CTA */
+.hero-btn-whatsapp {
+  background: linear-gradient(135deg, #c7ae8d 0%, #a68c69 100%);
+  color: #0b0a09 !important;
+  border: 1px solid #d7c3a8;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 1.9rem;
+  box-shadow: 0 4px 20px rgba(199, 174, 141, 0.25);
+}
+
+.hero-btn-whatsapp:hover {
+  background: #f4f0e9;
+  color: #0b0a09 !important;
+  box-shadow: 0 0 30px rgba(199, 174, 141, 0.5);
+  transform: translateY(-2px);
+}
+
+.hero-btn-whatsapp svg {
+  width: 19px;
+  height: 19px;
+  color: #0b0a09;
+  flex-shrink: 0;
+}
+
+/* Top Announcement Bar WhatsApp Link */
+#topbar-wa-link {
+  color: var(--color-beige-italian);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: color var(--transition-fast);
+}
+
+#topbar-wa-link:hover {
+  color: var(--color-offwhite);
+}
+
+/* Concierge layout when Card 2 (Loja Oficial) is hidden */
+.concierge-card-single {
+  max-width: 650px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ==========================================================================
+   FLOATING WHATSAPP CTA
+   ========================================================================== */
+.wa-float-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 990;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #25d366;
+  color: #0b0a09;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.85rem 1.35rem;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45), 0 4px 12px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all var(--transition-fast);
+}
+
+.wa-float-btn::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  border: 2px solid rgba(37, 211, 102, 0.6);
+  animation: waPulse 2.4s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+  pointer-events: none;
+}
+
+.wa-float-btn:hover {
+  background: #20ba5a;
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 16px 36px rgba(37, 211, 102, 0.6), 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+.wa-float-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+@keyframes waPulse {
+  0% { transform: scale(0.98); opacity: 0.9; }
+  60% { transform: scale(1.15); opacity: 0; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+
+@media (max-width: 640px) {
+  .wa-float-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    padding: 0.75rem 1.15rem;
+    font-size: 0.76rem;
+  }
+}
+

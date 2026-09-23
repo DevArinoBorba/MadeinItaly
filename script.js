@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalLining.textContent = item.lining;
     modalSizes.textContent = item.sizes;
 
-    const encodedMsg = encodeURIComponent(`Olá! Gostaria de consultar disponibilidade e detalhes do ${item.whatsappRef}.`);
+    const encodedMsg = encodeURIComponent(`Olá! Vim pelo Google, gostaria de ver o catálogo e consultar disponibilidade do ${item.whatsappRef}.`);
     modalWhatsappCta.href = `https://wa.me/5511978365191?text=${encodedMsg}`;
     modalEcomCta.href = `https://madeinitalyoutlet.com.br`;
 
@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resultDesc.textContent = `Para sua preferência (${quizAnswers.occasion} · ${quizAnswers.fit} · ${quizAnswers.color}), recomendamos esta curadoria: ${justification}`;
 
     const textPayload = encodeURIComponent(
-      `Olá! Fiz o Guia de Estilo no site institucional. Minha recomendação ideal foi o ${recommendedBlazer} (${quizAnswers.occasion}, ${quizAnswers.fit}). Gostaria de verificar opções e tamanhos disponíveis!`
+      `Olá! Vim pelo Google, gostaria de ver o catálogo. Fiz o Guia de Estilo no site e minha recomendação foi o ${recommendedBlazer} (${quizAnswers.occasion}, ${quizAnswers.fit}). Gostaria de verificar opções e tamanhos disponíveis!`
     );
     resultWhatsappCta.href = `https://wa.me/5511978365191?text=${textPayload}`;
   }
