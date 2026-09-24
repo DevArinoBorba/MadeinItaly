@@ -420,12 +420,26 @@ button {
   font-size: 0.72rem;
 }
 
-.btn-icon-tag {
+.btn-icon-tag,
+.btn-icon-wa {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 18px;
   height: 18px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.btn-sm .btn-icon-tag,
+.btn-sm .btn-icon-wa {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-whatsapp svg {
+  flex-shrink: 0;
+  fill: currentColor;
 }
 
 /* Mobile Toggle */
