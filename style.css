@@ -2105,10 +2105,27 @@ button {
 }
 
 /* Concierge layout when Card 2 (Loja Oficial) is hidden */
+.concierge-cards-grid:has(.concierge-card-single) {
+  display: flex;
+  justify-content: center;
+}
+
 .concierge-card-single {
-  max-width: 650px;
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 580px;
   margin: 0 auto;
   width: 100%;
+  text-align: center;
+}
+
+.concierge-card-single .concierge-icon-circle {
+  margin: 0 auto 1.5rem auto;
+}
+
+.concierge-card-single .concierge-card-header p {
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 /* ==========================================================================
